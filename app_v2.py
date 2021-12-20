@@ -468,7 +468,7 @@ if __name__ == '__main__':
                 for item in results['library']:
                     if item['Score'] != None:
                         # link_file = item['Subject']
-                        # file_found = f"/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/{item['Subject']}"
+                        # file_found = f"/{item['Subject']}"
                         col1.success(f"{item['Subject']}")
                         # with open(file_found, "rb") as file:
                         #     btn = col1.download_button(
@@ -481,7 +481,7 @@ if __name__ == '__main__':
                 for item in results['weblinks']:
                     if item['Score'] != None:
                         col2.success(f"{item['Subject']}")
-                        # file_found = f"/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/{item['Subject']}"
+                        # file_found = f"/{item['Subject']}"
                         # with open(file_found, "rb") as file:
                         #     btn = col2.download_button(
                         #         label='open local file',
@@ -492,7 +492,7 @@ if __name__ == '__main__':
             if results['local'] != []:
                 for item in results['local']:
                     if item['Score'] != None:
-                        file_found = f"/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/{item['Subject']}"
+                        file_found = f"/{item['Subject']}"
                         col3.success(item['Subject'])
                         with open(file_found, "rb") as file:
                             btn = col3.download_button(
@@ -504,7 +504,7 @@ if __name__ == '__main__':
             if results['remote'] != []:
                 for item in results['remote']:
                     if item['Score'] != None:
-                        file_found = f"/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/{item['Subject']}"
+                        file_found = f"/{item['Subject']}"
                         col4.success(item['Subject'])
                         with open(file_found, "rb") as file:
                             btn = col4.download_button(
@@ -566,7 +566,7 @@ if __name__ == '__main__':
                 cnt_files = 0
                 for item in results['local']:
                     if item['Score'] != None:
-                        loc_res[item['Subject']] = '/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/' + item['Subject']
+                        loc_res[item['Subject']] = '/' + item['Subject']
                         col3.success(item['Subject'])
                         with open(loc_res[item['Subject']], "rb") as file:
                             try:
@@ -595,7 +595,7 @@ if __name__ == '__main__':
                 for item in results['remote']:
                     if item['Score'] != None:
                         with col4.container():
-                            rem_res[item['Subject']] = '/Users/ankushpandey/Desktop/Search_document_app/DocumentSearchEngine-master/Flask API/first delivery/' + item['Subject']
+                            rem_res[item['Subject']] = '/' + item['Subject']
                             col4.success(item['Subject'])
                             with open(rem_res[item['Subject']], "rb") as file:
                                 try:
