@@ -5,3 +5,4 @@ matplotlib
 sklearn
 PyPDF2
 nltk
+bokeh
