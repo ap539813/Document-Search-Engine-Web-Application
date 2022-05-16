@@ -3,3 +3,4 @@ scipy
 seaborn
 matplotlib
 sklearn
+PyPDF2
