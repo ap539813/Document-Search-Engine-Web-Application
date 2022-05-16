@@ -7,3 +7,4 @@ PyPDF2
 nltk
 bokeh
 streamlit-bokeh-events
+mysql-connector-python
