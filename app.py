@@ -1,5 +1,6 @@
 import os
 try:
+    """Try to import the libraries first"""
     import altair as alt
     import streamlit as st
     # from subprocess import call
@@ -18,7 +19,10 @@ try:
     from weblink_support import make_model_weblinks
     from configure_source import update_source
     from utils import MakeQuery
+
+
 except:
+    """If faced with any error it will try to setup the environment"""
     os.system('python set_up.py')
 
 
