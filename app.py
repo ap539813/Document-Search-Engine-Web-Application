@@ -1,21 +1,25 @@
-import altair as alt
-import streamlit as st
-# from subprocess import call
-import seaborn as sns
-import matplotlib.pyplot as plt
+import os
+try:
+    import altair as alt
+    import streamlit as st
+    # from subprocess import call
+    import seaborn as sns
+    import matplotlib.pyplot as plt
 
-import pickle
+    import pickle
 
-# from bokeh.models.widgets import Button
-# from bokeh.models import CustomJS
-# from streamlit_bokeh_events import streamlit_bokeh_events
+    # from bokeh.models.widgets import Button
+    # from bokeh.models import CustomJS
+    # from streamlit_bokeh_events import streamlit_bokeh_events
 
-from weblibrary_support import make_model_library
-from remoterepo_support import make_model_remoterepo
-from localrepo_support import make_model_localrepo
-from weblink_support import make_model_weblinks
-from configure_source import update_source
-from utils import MakeQuery
+    from weblibrary_support import make_model_library
+    from remoterepo_support import make_model_remoterepo
+    from localrepo_support import make_model_localrepo
+    from weblink_support import make_model_weblinks
+    from configure_source import update_source
+    from utils import MakeQuery
+except:
+    os.system('python set_up.py')
 
 
 
