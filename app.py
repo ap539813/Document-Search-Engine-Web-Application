@@ -64,7 +64,7 @@ def main():
     # print(mode)
     # with open('app_mode_status/mode.txt') as file:
     #     mode = file.read()
-
+    st.sidebar.image("Document search engine.png")
     operation_mode = st.sidebar.selectbox(
         "Mode of operation",
         ("", "Search", "Configure")
