@@ -35,6 +35,7 @@ def get_page_links(url):
                 links.append(url + item.get_attribute_list('href')[0])
         except:
             pass
+    print(links)
     return links
 
 def read_pdf(loc):
@@ -78,9 +79,9 @@ def read_pdf_online(links):
                 content.append(text)
         except:
             text = get_page_text(file).replace('\n', ' ').replace('  ', '').lower()
-            while len(text) < 1000:
-                print('in loop')
-                text = get_page_text(file).replace('\n', ' ').replace('  ', '').lower()
+            if len(text) < 1000:
+                print('Not enough text in page!!')
+                # text = get_page_text(file).replace('\n', ' ').replace('  ', '').lower()
             else:
                 titles.append(file)
                 content.append(text)
